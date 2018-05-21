@@ -17,11 +17,24 @@ import java.util.regex.*;
  */
 public class IntroToConditionalStatements {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scan = new Scanner(System.in);
+      int n = scan.nextInt(); 
+      scan.close();
+      String ans="";
+          
+      // if 'n' is NOT evenly divisible by 2 (i.e.: n is odd)
+      if(n%2==1){
+         ans = "Weird";
+      }
+      else{
+        if (n > 5 && n < 21) {
+            ans = "Weird";
+        }
+        else
+            ans = "Not Weird";
+      }
+      System.out.println(ans);
     }
     
 }
